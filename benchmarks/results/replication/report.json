@@ -1,0 +1,976 @@
+{
+  "project": "code-duel-game",
+  "version": "0.1.0",
+  "date": "2026-11-06T13:20:34.740208+00:00",
+  "environment": {
+    "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:30:20) [Clang 20.1.8 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+  },
+  "parameters": {
+    "medium_guesses": 50,
+    "medium_answers": 70,
+    "medium_tolerance": 0.08,
+    "hard_guesses": 500,
+    "hard_answers": 1500,
+    "exact_threshold": 250,
+    "entropy_tolerance": 0.02
+  },
+  "seeds": [
+    7,
+    101
+  ],
+  "lengths": [
+    4
+  ],
+  "requested_count": 1000,
+  "total_runtime_seconds": 26.07582358305808,
+  "invalid_guesses": 0,
+  "groups": {
+    "4:7:easy": {
+      "length": 4,
+      "seed": 7,
+      "difficulty": "easy",
+      "sample_size": 1000,
+      "completed": 1000,
+      "failed_games": 0,
+      "timeouts": 0,
+      "mean_guesses": 10.174,
+      "median_guesses": 10.0,
+      "p95_guesses": 13,
+      "worst_case_guesses": 14,
+      "average_decision_seconds": 4.598438741927789e-05,
+      "average_validation_seconds": 8.36671886159902e-05,
+      "guess_histogram": {
+        "2": 1,
+        "3": 2,
+        "4": 7,
+        "5": 12,
+        "6": 19,
+        "7": 64,
+        "8": 76,
+        "9": 127,
+        "10": 200,
+        "11": 233,
+        "12": 178,
+        "13": 68,
+        "14": 13
+      },
+      "remaining_candidates_by_round": {
+        "1": 5191.56,
+        "2": 2497.924,
+        "3": 1109.176176176176,
+        "4": 469.9789368104313,
+        "5": 181.16464646464647,
+        "6": 72.18200408997956,
+        "7": 27.931178310740354,
+        "8": 11.429050279329608,
+        "9": 4.892551892551893,
+        "10": 2.3728323699421967,
+        "11": 1.3841463414634145,
+        "12": 1.0656370656370657,
+        "13": 1.0123456790123457,
+        "14": 1
+      }
+    },
+    "4:7:medium": {
+      "length": 4,
+      "seed": 7,
+      "difficulty": "medium",
+      "sample_size": 1000,
+      "completed": 1000,
+      "failed_games": 0,
+      "timeouts": 0,
+      "mean_guesses": 10.103,
+      "median_guesses": 10.0,
+      "p95_guesses": 12,
+      "worst_case_guesses": 15,
+      "average_decision_seconds": 0.00010452693085636312,
+      "average_validation_seconds": 7.76231508558419e-05,
+      "guess_histogram": {
+        "3": 1,
+        "4": 5,
+        "5": 8,
+        "6": 27,
+        "7": 39,
+        "8": 89,
+        "9": 143,
+        "10": 215,
+        "11": 258,
+        "12": 181,
+        "13": 32,
+        "15": 2
+      },
+      "remaining_candidates_by_round": {
+        "1": 5191.56,
+        "2": 2573.833,
+        "3": 1158.505,
+        "4": 478.35035035035037,
+        "5": 187.43360160965796,
+        "6": 69.48275862068965,
+        "7": 25.72992700729927,
+        "8": 9.722826086956522,
+        "9": 4.009626955475331,
+        "10": 1.8459302325581395,
+        "11": 1.160676532769556,
+        "12": 1.0232558139534884,
+        "13": 1.088235294117647,
+        "14": 1.5,
+        "15": 1
+      }
+    },
+    "4:7:hard": {
+      "length": 4,
+      "seed": 7,
+      "difficulty": "hard",
+      "sample_size": 1000,
+      "completed": 1000,
+      "failed_games": 0,
+      "timeouts": 0,
+      "mean_guesses": 10.092,
+      "median_guesses": 10.0,
+      "p95_guesses": 12,
+      "worst_case_guesses": 14,
+      "average_decision_seconds": 0.0008846129628931539,
+      "average_validation_seconds": 7.527729886625696e-05,
+      "guess_histogram": {
+        "3": 2,
+        "4": 2,
+        "5": 13,
+        "6": 26,
+        "7": 56,
+        "8": 76,
+        "9": 126,
+        "10": 207,
+        "11": 291,
+        "12": 162,
+        "13": 38,
+        "14": 1
+      },
+      "remaining_candidates_by_round": {
+        "1": 5191.56,
+        "2": 2531.486,
+        "3": 1169.598,
+        "4": 489.563126252505,
+        "5": 190.81626506024097,
+        "6": 71.41912512716175,
+        "7": 26.383490073145246,
+        "8": 9.95449500554939,
+        "9": 4.156363636363636,
+        "10": 1.8927038626609443,
+        "11": 1.1443089430894309,
+        "12": 1.0049751243781095,
+        "13": 1,
+        "14": 1
+      }
+    },
+    "4:101:easy": {
+      "length": 4,
+      "seed": 101,
+      "difficulty": "easy",
+      "sample_size": 1000,
+      "completed": 1000,
+      "failed_games": 0,
+      "timeouts": 0,
+      "mean_guesses": 10.264,
+      "median_guesses": 11.0,
+      "p95_guesses": 13,
+      "worst_case_guesses": 14,
+      "average_decision_seconds": 4.473407202493182e-05,
+      "average_validation_seconds": 8.0034458626948e-05,
+      "guess_histogram": {
+        "2": 1,
+        "3": 1,
+        "4": 7,
+        "5": 10,
+        "6": 21,
+        "7": 52,
+        "8": 90,
+        "9": 123,
+        "10": 163,
+        "11": 244,
+        "12": 201,
+        "13": 80,
+        "14": 7
+      },
+      "remaining_candidates_by_round": {
+        "1": 5227.695,
+        "2": 2522.734,
+        "3": 1119.3043043043042,
+        "4": 472.17034068136275,
+        "5": 188.5095862764884,
+        "6": 72.91743119266054,
+        "7": 28.845833333333335,
+        "8": 11.269823788546255,
+        "9": 4.905867970660147,
+        "10": 2.3151079136690647,
+        "11": 1.3477443609022557,
+        "12": 1.0381944444444444,
+        "13": 1,
+        "14": 1
+      }
+    },
+    "4:101:medium": {
+      "length": 4,
+      "seed": 101,
+      "difficulty": "medium",
+      "sample_size": 1000,
+      "completed": 1000,
+      "failed_games": 0,
+      "timeouts": 0,
+      "mean_guesses": 10.049,
+      "median_guesses": 10.0,
+      "p95_guesses": 12,
+      "worst_case_guesses": 14,
+      "average_decision_seconds": 0.00010255806755140336,
+      "average_validation_seconds": 7.673381607058686e-05,
+      "guess_histogram": {
+        "3": 1,
+        "4": 5,
+        "5": 16,
+        "6": 29,
+        "7": 55,
+        "8": 85,
+        "9": 126,
+        "10": 201,
+        "11": 258,
+        "12": 188,
+        "13": 35,
+        "14": 1
+      },
+      "remaining_candidates_by_round": {
+        "1": 5227.695,
+        "2": 2500.218,
+        "3": 1131.363,
+        "4": 468.7677677677678,
+        "5": 183.88430583501005,
+        "6": 69.19529652351738,
+        "7": 25.938883034773447,
+        "8": 9.9082774049217,
+        "9": 4.221260815822003,
+        "10": 1.9765739385065886,
+        "11": 1.1763485477178424,
+        "12": 1.0133928571428572,
+        "13": 1,
+        "14": 1
+      }
+    },
+    "4:101:hard": {
+      "length": 4,
+      "seed": 101,
+      "difficulty": "hard",
+      "sample_size": 1000,
+      "completed": 1000,
+      "failed_games": 0,
+      "timeouts": 0,
+      "mean_guesses": 10.109,
+      "median_guesses": 10.0,
+      "p95_guesses": 12,
+      "worst_case_guesses": 13,
+      "average_decision_seconds": 0.0008478358738655581,
+      "average_validation_seconds": 7.303510519393723e-05,
+      "guess_histogram": {
+        "3": 2,
+        "4": 6,
+        "5": 12,
+        "6": 23,
+        "7": 51,
+        "8": 79,
+        "9": 134,
+        "10": 211,
+        "11": 246,
+        "12": 198,
+        "13": 38
+      },
+      "remaining_candidates_by_round": {
+        "1": 5227.695,
+        "2": 2544.233,
+        "3": 1162.491,
+        "4": 487.0941883767535,
+        "5": 189.55241935483872,
+        "6": 71.11224489795919,
+        "7": 25.985370950888193,
+        "8": 9.960264900662251,
+        "9": 4.078597339782346,
+        "10": 1.84992784992785,
+        "11": 1.1473029045643153,
+        "12": 1.0127118644067796,
+        "13": 1
+      }
+    }
+  },
+  "representative_traces": {
+    "4:7:easy": [
+      {
+        "guess": "7419",
+        "feedback": 0,
+        "candidates": 6561,
+        "count_exact": true,
+        "decision_seconds": 0.002191334031522274,
+        "validation_seconds": 0.007424833020195365,
+        "strategy_seconds": 0.0015566250076517463,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "3104",
+        "feedback": 1,
+        "candidates": 2048,
+        "count_exact": true,
+        "decision_seconds": 0.0012483750469982624,
+        "validation_seconds": 0.008745666011236608,
+        "strategy_seconds": 0.0011563330190256238,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "3763",
+        "feedback": 0,
+        "candidates": 1176,
+        "count_exact": true,
+        "decision_seconds": 0.0005245000356808305,
+        "validation_seconds": 0.003954541985876858,
+        "strategy_seconds": 0.00041312503162771463,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5198",
+        "feedback": 1,
+        "candidates": 434,
+        "count_exact": true,
+        "decision_seconds": 0.000374582945369184,
+        "validation_seconds": 0.002923874999396503,
+        "strategy_seconds": 0.0002649170346558094,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "2127",
+        "feedback": 0,
+        "candidates": 154,
+        "count_exact": true,
+        "decision_seconds": 0.00022829195950180292,
+        "validation_seconds": 0.0013963331002742052,
+        "strategy_seconds": 0.0001103340182453394,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5634",
+        "feedback": 1,
+        "candidates": 72,
+        "count_exact": true,
+        "decision_seconds": 0.00018783402629196644,
+        "validation_seconds": 0.0005845419364050031,
+        "strategy_seconds": 5.262496415525675e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "6294",
+        "feedback": 0,
+        "candidates": 30,
+        "count_exact": true,
+        "decision_seconds": 0.00016129203140735626,
+        "validation_seconds": 0.0003197499318048358,
+        "strategy_seconds": 2.9459013603627682e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9608",
+        "feedback": 1,
+        "candidates": 25,
+        "count_exact": true,
+        "decision_seconds": 0.00015212490689009428,
+        "validation_seconds": 0.00015474995598196983,
+        "strategy_seconds": 1.6832957044243813e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5900",
+        "feedback": 2,
+        "candidates": 16,
+        "count_exact": true,
+        "decision_seconds": 0.00015870900824666023,
+        "validation_seconds": 0.00014775001909583807,
+        "strategy_seconds": 1.629104372113943e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5806",
+        "feedback": 2,
+        "candidates": 9,
+        "count_exact": true,
+        "decision_seconds": 0.000164708006195724,
+        "validation_seconds": 0.00010708300396800041,
+        "strategy_seconds": 1.4249933883547783e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5502",
+        "feedback": 2,
+        "candidates": 4,
+        "count_exact": true,
+        "decision_seconds": 0.00017216696869581938,
+        "validation_seconds": 7.033301517367363e-05,
+        "strategy_seconds": 1.237494871020317e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5005",
+        "feedback": 3,
+        "candidates": 2,
+        "count_exact": true,
+        "decision_seconds": 0.0001788330264389515,
+        "validation_seconds": 3.9499951526522636e-05,
+        "strategy_seconds": 1.091696321964264e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5001",
+        "feedback": 2,
+        "candidates": 1,
+        "count_exact": true,
+        "decision_seconds": 0.00022866693325340748,
+        "validation_seconds": 2.7333036996424198e-05,
+        "strategy_seconds": 1.1416967026889324e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5305",
+        "feedback": 4,
+        "candidates": 1,
+        "count_exact": true,
+        "decision_seconds": 0.00020154204685240984,
+        "validation_seconds": 2.066709566861391e-05,
+        "strategy_seconds": 1.129100564867258e-05,
+        "solver_nodes": 0
+      }
+    ],
+    "4:7:medium": [
+      {
+        "guess": "7419",
+        "feedback": 0,
+        "candidates": 6561,
+        "count_exact": true,
+        "decision_seconds": 0.0019291670760139823,
+        "validation_seconds": 6.69590663164854e-05,
+        "strategy_seconds": 0.0019023329950869083,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "1775",
+        "feedback": 1,
+        "candidates": 2048,
+        "count_exact": true,
+        "decision_seconds": 0.003400124958716333,
+        "validation_seconds": 0.008663540938869119,
+        "strategy_seconds": 0.003315417096018791,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "1987",
+        "feedback": 0,
+        "candidates": 1176,
+        "count_exact": true,
+        "decision_seconds": 0.0026082081021741033,
+        "validation_seconds": 0.004104083054699004,
+        "strategy_seconds": 0.002516209031455219,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "8278",
+        "feedback": 0,
+        "candidates": 588,
+        "count_exact": true,
+        "decision_seconds": 0.00249858305323869,
+        "validation_seconds": 0.002957583055831492,
+        "strategy_seconds": 0.0023862499510869384,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "3595",
+        "feedback": 1,
+        "candidates": 252,
+        "count_exact": true,
+        "decision_seconds": 0.0023619160056114197,
+        "validation_seconds": 0.0018099580192938447,
+        "strategy_seconds": 0.002250291989184916,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5145",
+        "feedback": 2,
+        "candidates": 65,
+        "count_exact": true,
+        "decision_seconds": 0.002243915922008455,
+        "validation_seconds": 0.0009164169896394014,
+        "strategy_seconds": 0.0021270830184221268,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "0645",
+        "feedback": 1,
+        "candidates": 35,
+        "count_exact": true,
+        "decision_seconds": 0.0021206249948590994,
+        "validation_seconds": 0.0002839999506250024,
+        "strategy_seconds": 0.001993958023376763,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9105",
+        "feedback": 2,
+        "candidates": 15,
+        "count_exact": true,
+        "decision_seconds": 0.0008770000422373414,
+        "validation_seconds": 0.00017637491691857576,
+        "strategy_seconds": 0.0007439999608322978,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "2155",
+        "feedback": 1,
+        "candidates": 3,
+        "count_exact": true,
+        "decision_seconds": 0.00028775003738701344,
+        "validation_seconds": 8.887506555765867e-05,
+        "strategy_seconds": 0.0001522499369457364,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5805",
+        "feedback": 3,
+        "candidates": 2,
+        "count_exact": true,
+        "decision_seconds": 0.00016033300198614597,
+        "validation_seconds": 2.7250032871961594e-05,
+        "strategy_seconds": 1.795799471437931e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5005",
+        "feedback": 3,
+        "candidates": 1,
+        "count_exact": true,
+        "decision_seconds": 0.0001657500397413969,
+        "validation_seconds": 2.2957916371524334e-05,
+        "strategy_seconds": 1.4208024367690086e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5305",
+        "feedback": 4,
+        "candidates": 1,
+        "count_exact": true,
+        "decision_seconds": 0.00016987498383969069,
+        "validation_seconds": 1.8415972590446472e-05,
+        "strategy_seconds": 9.874929673969746e-06,
+        "solver_nodes": 0
+      }
+    ],
+    "4:7:hard": [
+      {
+        "guess": "7419",
+        "feedback": 0,
+        "candidates": 6561,
+        "count_exact": true,
+        "decision_seconds": 0.0015952500980347395,
+        "validation_seconds": 6.329105235636234e-05,
+        "strategy_seconds": 0.001574499998241663,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "3385",
+        "feedback": 2,
+        "candidates": 384,
+        "count_exact": true,
+        "decision_seconds": 0.454016458010301,
+        "validation_seconds": 0.009149542078375816,
+        "strategy_seconds": 0.45390999992378056,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "1585",
+        "feedback": 1,
+        "candidates": 224,
+        "count_exact": true,
+        "decision_seconds": 0.08815208298619837,
+        "validation_seconds": 0.0008367080008611083,
+        "strategy_seconds": 0.08802845899481326,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "3283",
+        "feedback": 0,
+        "candidates": 56,
+        "count_exact": true,
+        "decision_seconds": 0.03432762494776398,
+        "validation_seconds": 0.0005701669724658132,
+        "strategy_seconds": 0.03419687505811453,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "4375",
+        "feedback": 2,
+        "candidates": 42,
+        "count_exact": true,
+        "decision_seconds": 0.0019574579782783985,
+        "validation_seconds": 0.00017833395395427942,
+        "strategy_seconds": 0.0018339999951422215,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9395",
+        "feedback": 2,
+        "candidates": 30,
+        "count_exact": true,
+        "decision_seconds": 0.0011655420530587435,
+        "validation_seconds": 0.00016008398961275816,
+        "strategy_seconds": 0.0010497089242562652,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "6365",
+        "feedback": 2,
+        "candidates": 20,
+        "count_exact": true,
+        "decision_seconds": 0.0006665830733254552,
+        "validation_seconds": 0.00013345794286578894,
+        "strategy_seconds": 0.0005488750757649541,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "0305",
+        "feedback": 3,
+        "candidates": 7,
+        "count_exact": true,
+        "decision_seconds": 0.0003820419078692794,
+        "validation_seconds": 0.00010212499182671309,
+        "strategy_seconds": 0.0002586659975349903,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "0345",
+        "feedback": 2,
+        "candidates": 3,
+        "count_exact": true,
+        "decision_seconds": 0.00017554196529090405,
+        "validation_seconds": 4.583399277180433e-05,
+        "strategy_seconds": 4.554097540676594e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "8305",
+        "feedback": 3,
+        "candidates": 2,
+        "count_exact": true,
+        "decision_seconds": 0.00015541596803814173,
+        "validation_seconds": 2.675002906471491e-05,
+        "strategy_seconds": 1.837499439716339e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5305",
+        "feedback": 4,
+        "candidates": 1,
+        "count_exact": true,
+        "decision_seconds": 0.0001829999964684248,
+        "validation_seconds": 2.2916938178241253e-05,
+        "strategy_seconds": 1.466704998165369e-05,
+        "solver_nodes": 0
+      }
+    ],
+    "4:101:easy": [
+      {
+        "guess": "5091",
+        "feedback": 1,
+        "candidates": 2916,
+        "count_exact": true,
+        "decision_seconds": 0.0015571669209748507,
+        "validation_seconds": 0.007074041990563273,
+        "strategy_seconds": 0.0015362499980255961,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5338",
+        "feedback": 0,
+        "candidates": 1728,
+        "count_exact": true,
+        "decision_seconds": 0.0005758330225944519,
+        "validation_seconds": 0.003812582930549979,
+        "strategy_seconds": 0.0005191660020500422,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9495",
+        "feedback": 1,
+        "candidates": 632,
+        "count_exact": true,
+        "decision_seconds": 0.00041887490078806877,
+        "validation_seconds": 0.003168958006426692,
+        "strategy_seconds": 0.0003494579577818513,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "7481",
+        "feedback": 1,
+        "candidates": 119,
+        "count_exact": true,
+        "decision_seconds": 0.00022637494839727879,
+        "validation_seconds": 0.0015111250104382634,
+        "strategy_seconds": 0.00014350004494190216,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "7299",
+        "feedback": 0,
+        "candidates": 55,
+        "count_exact": true,
+        "decision_seconds": 0.00012341700494289398,
+        "validation_seconds": 0.0003637500340119004,
+        "strategy_seconds": 3.366603050380945e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "1085",
+        "feedback": 0,
+        "candidates": 42,
+        "count_exact": true,
+        "decision_seconds": 0.00011454196646809578,
+        "validation_seconds": 0.00020224996842443943,
+        "strategy_seconds": 1.995800994336605e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9141",
+        "feedback": 2,
+        "candidates": 30,
+        "count_exact": true,
+        "decision_seconds": 0.00011725001968443394,
+        "validation_seconds": 0.00018049997743219137,
+        "strategy_seconds": 1.77919864654541e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9801",
+        "feedback": 2,
+        "candidates": 20,
+        "count_exact": true,
+        "decision_seconds": 0.00012137496378272772,
+        "validation_seconds": 0.00014949997421354055,
+        "strategy_seconds": 1.5583005733788013e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9721",
+        "feedback": 3,
+        "candidates": 7,
+        "count_exact": true,
+        "decision_seconds": 0.00012695800978690386,
+        "validation_seconds": 0.00011408398859202862,
+        "strategy_seconds": 1.3874960131943226e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9521",
+        "feedback": 4,
+        "candidates": 1,
+        "count_exact": true,
+        "decision_seconds": 0.00013070798013359308,
+        "validation_seconds": 5.037500523030758e-05,
+        "strategy_seconds": 1.0042102076113224e-05,
+        "solver_nodes": 0
+      }
+    ],
+    "4:101:medium": [
+      {
+        "guess": "5091",
+        "feedback": 1,
+        "candidates": 2916,
+        "count_exact": true,
+        "decision_seconds": 0.0015108329243957996,
+        "validation_seconds": 4.341697786003351e-05,
+        "strategy_seconds": 0.0014904579147696495,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "1594",
+        "feedback": 1,
+        "candidates": 944,
+        "count_exact": true,
+        "decision_seconds": 0.0025809999788179994,
+        "validation_seconds": 0.00381295895203948,
+        "strategy_seconds": 0.002521915943361819,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "0699",
+        "feedback": 0,
+        "candidates": 378,
+        "count_exact": true,
+        "decision_seconds": 0.0022564580431208014,
+        "validation_seconds": 0.0017234589904546738,
+        "strategy_seconds": 0.0021917499834671617,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "2074",
+        "feedback": 0,
+        "candidates": 160,
+        "count_exact": true,
+        "decision_seconds": 0.002168959006667137,
+        "validation_seconds": 0.0009134589927271008,
+        "strategy_seconds": 0.0021043330198153853,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5553",
+        "feedback": 1,
+        "candidates": 49,
+        "count_exact": true,
+        "decision_seconds": 0.0021133749978616834,
+        "validation_seconds": 0.00048166699707508087,
+        "strategy_seconds": 0.0020437089260667562,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "8561",
+        "feedback": 2,
+        "candidates": 30,
+        "count_exact": true,
+        "decision_seconds": 0.001424291986040771,
+        "validation_seconds": 0.00017716700676828623,
+        "strategy_seconds": 0.0013505000388249755,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "4531",
+        "feedback": 2,
+        "candidates": 20,
+        "count_exact": true,
+        "decision_seconds": 0.0005902498960494995,
+        "validation_seconds": 0.0001278329873457551,
+        "strategy_seconds": 0.0005117499968037009,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "7581",
+        "feedback": 2,
+        "candidates": 12,
+        "count_exact": true,
+        "decision_seconds": 0.0003235840704292059,
+        "validation_seconds": 9.900005534291267e-05,
+        "strategy_seconds": 0.00023929099552333355,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "3511",
+        "feedback": 2,
+        "candidates": 6,
+        "count_exact": true,
+        "decision_seconds": 0.00018758303485810757,
+        "validation_seconds": 6.962497718632221e-05,
+        "strategy_seconds": 9.612506255507469e-05,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9521",
+        "feedback": 4,
+        "candidates": 1,
+        "count_exact": true,
+        "decision_seconds": 0.00013349996879696846,
+        "validation_seconds": 4.2541068978607655e-05,
+        "strategy_seconds": 3.404100425541401e-05,
+        "solver_nodes": 0
+      }
+    ],
+    "4:101:hard": [
+      {
+        "guess": "5091",
+        "feedback": 1,
+        "candidates": 2916,
+        "count_exact": true,
+        "decision_seconds": 0.001545957988128066,
+        "validation_seconds": 4.445796366780996e-05,
+        "strategy_seconds": 0.0015224580420181155,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "1064",
+        "feedback": 0,
+        "candidates": 1728,
+        "count_exact": true,
+        "decision_seconds": 0.4248002499807626,
+        "validation_seconds": 0.0037427080096676946,
+        "strategy_seconds": 0.42471458308864385,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "5848",
+        "feedback": 0,
+        "candidates": 896,
+        "count_exact": true,
+        "decision_seconds": 0.4254863749956712,
+        "validation_seconds": 0.003214749973267317,
+        "strategy_seconds": 0.42539166705682874,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9995",
+        "feedback": 1,
+        "candidates": 392,
+        "count_exact": true,
+        "decision_seconds": 0.25200858304742724,
+        "validation_seconds": 0.0021647909888997674,
+        "strategy_seconds": 0.25190483301412314,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "4499",
+        "feedback": 0,
+        "candidates": 84,
+        "count_exact": true,
+        "decision_seconds": 0.08506229193881154,
+        "validation_seconds": 0.0011945419246330857,
+        "strategy_seconds": 0.08495170902460814,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9771",
+        "feedback": 2,
+        "candidates": 36,
+        "count_exact": true,
+        "decision_seconds": 0.004106124979443848,
+        "validation_seconds": 0.0003030829830095172,
+        "strategy_seconds": 0.0040013749385252595,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9301",
+        "feedback": 2,
+        "candidates": 20,
+        "count_exact": true,
+        "decision_seconds": 0.0008622909663245082,
+        "validation_seconds": 0.00015591701958328485,
+        "strategy_seconds": 0.0007654170040041208,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9181",
+        "feedback": 2,
+        "candidates": 12,
+        "count_exact": true,
+        "decision_seconds": 0.00034962501376867294,
+        "validation_seconds": 0.00010070903226733208,
+        "strategy_seconds": 0.00024929107166826725,
+        "solver_nodes": 0
+      },
+      {
+        "guess": "9521",
+        "feedback": 4,
+        "candidates": 1,
+        "count_exact": true,
+        "decision_seconds": 0.00020783301442861557,
+        "validation_seconds": 7.299997378140688e-05,
+        "strategy_seconds": 0.00010166701395064592,
+        "solver_nodes": 0
+      }
+    ]
+  },
+  "timing_note": "Decision-tree cache shared for n<=4; wall decision time includes cache lookup and history validation. These are not cold-start timings. Large-n strategy uses samples, not full model counts."
+}

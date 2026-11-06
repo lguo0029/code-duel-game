@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-duel-game"
+version = "0.1.0"
+description = "Automatic-feedback human vs AI desktop code-breaking game"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.15,<0.16", "matplotlib>=3.8,<4"]
+
+[project.scripts]
+code-duel-game = "code_duel.gui:main"
+code-duel-game-benchmark = "code_duel.simulation:main"
+
+[tool.setuptools.packages.find]
+include = ["code_duel*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

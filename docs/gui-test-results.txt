@@ -1,0 +1,1 @@
+PASS: English/Chinese setup and gameplay, real worker rounds, history, draw, reset, close; hidden secret and automatic scoring
